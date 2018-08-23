@@ -1,4 +1,76 @@
+html {
+  font-size: 100%;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 5% 10%;
+}
+
+table,
+input {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead th td {
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+tbody tr td:last-of-type,
+tfoot td:last-of-type {
+  text-align: left;
+}
+
+td > img {
+  width: 5rem;
+  border: 0.15rem solid #bdc3c7;
+}
+
+td {
+  width: 50%;
+}
+
+input,
+button,
+td {
+  border: 0.15rem solid #ccc;
+  outline: none;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+}
+
+input,
+td {
+  padding: 0.5rem;
+}
+
+button {
+  width: 30%;
+  margin: 2.5%;
+  padding: 0.5rem 0rem;
+}
+
+button:hover,
+button:active {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+button,
+td > img {
+  border-radius: 0.375rem;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 2rem;
 }

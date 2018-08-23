@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import App from "./app";
+import Store from "./stores";
 import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
-
+const appStore = Store;
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(
+  <App
+    employeeStore={appStore.employeeStore}
+    modalStore={appStore.modalStore}
+  />,
+  rootElement
+);
